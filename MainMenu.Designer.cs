@@ -41,11 +41,11 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(163, 59);
+            this.label1.Location = new System.Drawing.Point(98, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 74);
+            this.label1.Size = new System.Drawing.Size(588, 74);
             this.label1.TabIndex = 0;
-            this.label1.Text = "D and D Character Manager";
+            this.label1.Text = "D&&D Character Manager";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CreateButton
