@@ -17,7 +17,7 @@ namespace DnD_Character_Sheet
         public File_Manager()
         {
             InitializeComponent();
-            fileView.Items.Clear();
+            characterView.Items.Clear();
             string projectDirectory = AppDomain.CurrentDomain.BaseDirectory;
             string[] files = Directory.GetFiles(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"/Characters");
             foreach (string file in files)
@@ -27,7 +27,7 @@ namespace DnD_Character_Sheet
                 ListViewItem item = new ListViewItem(fileName);
                 item.Tag = file;
 
-                fileView.Items.Add(item);
+                characterView.Items.Add(item);
 
             }
         }
