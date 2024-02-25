@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.CreateButton = new System.Windows.Forms.Button();
-            this.LoadButton = new System.Windows.Forms.Button();
-            this.ExitButton = new System.Windows.Forms.Button();
             this.BlurbLabel = new System.Windows.Forms.Label();
             this.CreditsLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(148, 47);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(145, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(410, 59);
             this.label1.TabIndex = 0;
@@ -48,35 +50,21 @@
             // 
             // CreateButton
             // 
-            this.CreateButton.Location = new System.Drawing.Point(178, 210);
+            this.CreateButton.BackColor = System.Drawing.Color.Transparent;
+            this.CreateButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CreateButton.BackgroundImage")));
+            this.CreateButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CreateButton.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateButton.Location = new System.Drawing.Point(164, 205);
             this.CreateButton.Name = "CreateButton";
-            this.CreateButton.Size = new System.Drawing.Size(90, 33);
+            this.CreateButton.Size = new System.Drawing.Size(93, 42);
             this.CreateButton.TabIndex = 1;
-            this.CreateButton.Text = "Create";
-            this.CreateButton.UseVisualStyleBackColor = true;
-            // 
-            // LoadButton
-            // 
-            this.LoadButton.Location = new System.Drawing.Point(300, 210);
-            this.LoadButton.Name = "LoadButton";
-            this.LoadButton.Size = new System.Drawing.Size(90, 33);
-            this.LoadButton.TabIndex = 2;
-            this.LoadButton.Text = "Load";
-            this.LoadButton.UseVisualStyleBackColor = true;
-            // 
-            // ExitButton
-            // 
-            this.ExitButton.Location = new System.Drawing.Point(425, 210);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(90, 33);
-            this.ExitButton.TabIndex = 3;
-            this.ExitButton.Text = "Exit";
-            this.ExitButton.UseVisualStyleBackColor = true;
+            this.CreateButton.Text = "CREATE";
+            this.CreateButton.UseVisualStyleBackColor = false;
             // 
             // BlurbLabel
             // 
-            this.BlurbLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.BlurbLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BlurbLabel.BackColor = System.Drawing.Color.Transparent;
+            this.BlurbLabel.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BlurbLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.BlurbLabel.Location = new System.Drawing.Point(83, 106);
             this.BlurbLabel.Name = "BlurbLabel";
@@ -89,26 +77,55 @@
             // 
             // CreditsLabel
             // 
-            this.CreditsLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.CreditsLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.CreditsLabel.Location = new System.Drawing.Point(84, 283);
+            this.CreditsLabel.BackColor = System.Drawing.Color.LightGray;
+            this.CreditsLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.CreditsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreditsLabel.ForeColor = System.Drawing.Color.Black;
+            this.CreditsLabel.Location = new System.Drawing.Point(180, 307);
             this.CreditsLabel.Name = "CreditsLabel";
-            this.CreditsLabel.Size = new System.Drawing.Size(524, 68);
+            this.CreditsLabel.Size = new System.Drawing.Size(360, 54);
             this.CreditsLabel.TabIndex = 5;
             this.CreditsLabel.Text = "CSCI 3037 Final Project\r\nCreated by Natalie Padron, Tyler Parrow, Benit Mukendi, " +
     "Elaina Vogel, and Matthew Woodward";
             this.CreditsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(304, 205);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 42);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "LOAD";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(447, 205);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 42);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "EXIT";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.BackgroundImage = global::DnD_Character_Sheet.Properties.Resources.arcanRooftop;
+            this.ClientSize = new System.Drawing.Size(735, 383);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.CreditsLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BlurbLabel);
-            this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.CreateButton);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
@@ -122,10 +139,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button CreateButton;
-        private System.Windows.Forms.Button LoadButton;
-        private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Label BlurbLabel;
         private System.Windows.Forms.Label CreditsLabel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
