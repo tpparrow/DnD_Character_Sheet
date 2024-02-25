@@ -21,5 +21,10 @@ namespace DnD_Character_Sheet
         {
             //Test Comment
         }
+
+        private void CreditsButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
