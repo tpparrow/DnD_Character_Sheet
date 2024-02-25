@@ -26,5 +26,10 @@ namespace DnD_Character_Sheet
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
