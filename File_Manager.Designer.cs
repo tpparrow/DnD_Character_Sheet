@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.fileView = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // listView1
+            // fileView
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(412, 179);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(121, 97);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.fileView.HideSelection = false;
+            this.fileView.Location = new System.Drawing.Point(187, 40);
+            this.fileView.Name = "fileView";
+            this.fileView.Size = new System.Drawing.Size(569, 355);
+            this.fileView.TabIndex = 0;
+            this.fileView.UseCompatibleStateImageBehavior = false;
             // 
             // File_Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.fileView);
             this.Name = "File_Manager";
             this.Text = "File_Manager";
             this.ResumeLayout(false);
@@ -54,6 +54,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView fileView;
     }
 }
