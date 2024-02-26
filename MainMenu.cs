@@ -31,5 +31,13 @@ namespace DnD_Character_Sheet
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Opens the file manager in a new window
+            //TP: Should we have the form load in the same window?
+            File_Manager file_Manager = new File_Manager();
+            file_Manager.Show();
+        }
     }
 }
