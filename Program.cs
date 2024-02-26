@@ -16,10 +16,7 @@ namespace DnD_Character_Sheet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            //DEVElOPMENT
-            //Application.Run(new Form1());
-            Application.Run(new File_Manager());
+            Application.Run(new Form1());
         }
     }
 }
