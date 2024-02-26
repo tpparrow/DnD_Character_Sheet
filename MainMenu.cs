@@ -24,7 +24,7 @@ namespace DnD_Character_Sheet
 
         private void CreditsButton_Click(object sender, EventArgs e)
         {
-
+            //Fix
         }
 
         private void button2_Click(object sender, EventArgs e)
