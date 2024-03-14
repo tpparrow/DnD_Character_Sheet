@@ -92,5 +92,17 @@
   <ItemGroup>
     <None Include="Resources\pngtree-blue-rectangle-button-png-image_5937900.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brownpaper.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swirl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-03-11 182324.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brownButton.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

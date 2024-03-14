@@ -20,11 +20,22 @@ namespace DnD_Character_Sheet
         private void Form1_Load(object sender, EventArgs e)
         {
             //Test Comment
+            //make title and blurb label this color 572500
         }
 
         private void CreditsButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CreateButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
