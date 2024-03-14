@@ -39,5 +39,12 @@ namespace DnD_Character_Sheet
             File_Manager file_Manager = new File_Manager();
             file_Manager.Show();
         }
+
+        private void CreateButton_Click(object sender, EventArgs e)
+        {
+            Character_Sheet character_Sheet = new Character_Sheet();
+            character_Sheet.Show();
+
+        }
     }
 }
