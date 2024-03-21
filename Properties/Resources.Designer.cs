@@ -63,9 +63,9 @@ namespace DnD_Character_Sheet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arcanRooftop {
+        internal static System.Drawing.Bitmap brownButton {
             get {
-                object obj = ResourceManager.GetObject("arcanRooftop", resourceCulture);
+                object obj = ResourceManager.GetObject("brownButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,29 @@ namespace DnD_Character_Sheet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pngtree_blue_rectangle_button_png_image_5937900 {
+        internal static System.Drawing.Bitmap brownpaper {
             get {
-                object obj = ResourceManager.GetObject("pngtree_blue_rectangle_button_png_image_5937900", resourceCulture);
+                object obj = ResourceManager.GetObject("brownpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_03_11_182324 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2024_03_11_182324", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap swirl {
+            get {
+                object obj = ResourceManager.GetObject("swirl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
