@@ -96,13 +96,19 @@
     <None Include="Resources\brownpaper.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\swirl.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Screenshot 2024-03-11 182324.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\brownButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swirl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upsideDownSwirl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

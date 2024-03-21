@@ -83,6 +83,16 @@ namespace DnD_Character_Sheet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rightSideUpSwirl {
+            get {
+                object obj = ResourceManager.GetObject("rightSideUpSwirl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2024_03_11_182324 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2024_03_11_182324", resourceCulture);
@@ -96,6 +106,16 @@ namespace DnD_Character_Sheet.Properties {
         internal static System.Drawing.Bitmap swirl {
             get {
                 object obj = ResourceManager.GetObject("swirl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap upsideDownSwirl {
+            get {
+                object obj = ResourceManager.GetObject("upsideDownSwirl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
