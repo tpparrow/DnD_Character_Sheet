@@ -64,6 +64,11 @@ namespace DnD_Character_Sheet
             pointsLabel.Text = PointsDistributable.ToString();
             
             UpdateButton();
+            UpdateStrengthSkillLabels();
+            UpdateDexteritySkillLabels();
+            UpdateIntelligenceSkillLabels();
+            UpdateWisdomSkillLabels();
+            UpdateCharismaSkillLabels();
         }
         
         //Attribute buttons

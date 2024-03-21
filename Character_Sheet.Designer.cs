@@ -539,162 +539,144 @@
             this.Performance.AutoSize = true;
             this.Performance.Location = new System.Drawing.Point(475, 33);
             this.Performance.Name = "Performance";
-            this.Performance.Size = new System.Drawing.Size(14, 16);
+            this.Performance.Size = new System.Drawing.Size(0, 16);
             this.Performance.TabIndex = 34;
-            this.Performance.Text = "5";
             // 
             // Persuasion
             // 
             this.Persuasion.AutoSize = true;
             this.Persuasion.Location = new System.Drawing.Point(475, 61);
             this.Persuasion.Name = "Persuasion";
-            this.Persuasion.Size = new System.Drawing.Size(14, 16);
+            this.Persuasion.Size = new System.Drawing.Size(0, 16);
             this.Persuasion.TabIndex = 33;
-            this.Persuasion.Text = "5";
             // 
             // SleightofHand
             // 
             this.SleightofHand.AutoSize = true;
             this.SleightofHand.Location = new System.Drawing.Point(475, 114);
             this.SleightofHand.Name = "SleightofHand";
-            this.SleightofHand.Size = new System.Drawing.Size(14, 16);
+            this.SleightofHand.Size = new System.Drawing.Size(0, 16);
             this.SleightofHand.TabIndex = 32;
-            this.SleightofHand.Text = "5";
             // 
             // Survival
             // 
             this.Survival.AutoSize = true;
             this.Survival.Location = new System.Drawing.Point(475, 164);
             this.Survival.Name = "Survival";
-            this.Survival.Size = new System.Drawing.Size(14, 16);
+            this.Survival.Size = new System.Drawing.Size(0, 16);
             this.Survival.TabIndex = 31;
-            this.Survival.Text = "5";
             // 
             // Stealth
             // 
             this.Stealth.AutoSize = true;
             this.Stealth.Location = new System.Drawing.Point(475, 140);
             this.Stealth.Name = "Stealth";
-            this.Stealth.Size = new System.Drawing.Size(14, 16);
+            this.Stealth.Size = new System.Drawing.Size(0, 16);
             this.Stealth.TabIndex = 30;
-            this.Stealth.Text = "5";
             // 
             // Religion
             // 
             this.Religion.AutoSize = true;
             this.Religion.Location = new System.Drawing.Point(475, 84);
             this.Religion.Name = "Religion";
-            this.Religion.Size = new System.Drawing.Size(14, 16);
+            this.Religion.Size = new System.Drawing.Size(0, 16);
             this.Religion.TabIndex = 29;
-            this.Religion.Text = "5";
             // 
             // Perception
             // 
             this.Perception.AutoSize = true;
             this.Perception.Location = new System.Drawing.Point(302, 164);
             this.Perception.Name = "Perception";
-            this.Perception.Size = new System.Drawing.Size(14, 16);
+            this.Perception.Size = new System.Drawing.Size(0, 16);
             this.Perception.TabIndex = 28;
-            this.Perception.Text = "5";
             // 
             // Nature
             // 
             this.Nature.AutoSize = true;
             this.Nature.Location = new System.Drawing.Point(302, 146);
             this.Nature.Name = "Nature";
-            this.Nature.Size = new System.Drawing.Size(14, 16);
+            this.Nature.Size = new System.Drawing.Size(0, 16);
             this.Nature.TabIndex = 27;
-            this.Nature.Text = "5";
             // 
             // Medicine
             // 
             this.Medicine.AutoSize = true;
             this.Medicine.Location = new System.Drawing.Point(302, 118);
             this.Medicine.Name = "Medicine";
-            this.Medicine.Size = new System.Drawing.Size(14, 16);
+            this.Medicine.Size = new System.Drawing.Size(0, 16);
             this.Medicine.TabIndex = 26;
-            this.Medicine.Text = "5";
             // 
             // Intimidation
             // 
             this.Intimidation.AutoSize = true;
             this.Intimidation.Location = new System.Drawing.Point(302, 62);
             this.Intimidation.Name = "Intimidation";
-            this.Intimidation.Size = new System.Drawing.Size(14, 16);
+            this.Intimidation.Size = new System.Drawing.Size(0, 16);
             this.Intimidation.TabIndex = 25;
-            this.Intimidation.Text = "5";
             // 
             // Investigation
             // 
             this.Investigation.AutoSize = true;
             this.Investigation.Location = new System.Drawing.Point(302, 92);
             this.Investigation.Name = "Investigation";
-            this.Investigation.Size = new System.Drawing.Size(14, 16);
+            this.Investigation.Size = new System.Drawing.Size(0, 16);
             this.Investigation.TabIndex = 24;
-            this.Investigation.Text = "5";
             // 
             // Insight
             // 
             this.Insight.AutoSize = true;
             this.Insight.Location = new System.Drawing.Point(302, 34);
             this.Insight.Name = "Insight";
-            this.Insight.Size = new System.Drawing.Size(14, 16);
+            this.Insight.Size = new System.Drawing.Size(0, 16);
             this.Insight.TabIndex = 23;
-            this.Insight.Text = "5";
             // 
             // History
             // 
             this.History.AutoSize = true;
             this.History.Location = new System.Drawing.Point(145, 167);
             this.History.Name = "History";
-            this.History.Size = new System.Drawing.Size(14, 16);
+            this.History.Size = new System.Drawing.Size(0, 16);
             this.History.TabIndex = 22;
-            this.History.Text = "5";
             // 
             // Deception
             // 
             this.Deception.AutoSize = true;
             this.Deception.Location = new System.Drawing.Point(146, 146);
             this.Deception.Name = "Deception";
-            this.Deception.Size = new System.Drawing.Size(14, 16);
+            this.Deception.Size = new System.Drawing.Size(0, 16);
             this.Deception.TabIndex = 21;
-            this.Deception.Text = "5";
             // 
             // Athletics
             // 
             this.Athletics.AutoSize = true;
             this.Athletics.Location = new System.Drawing.Point(146, 117);
             this.Athletics.Name = "Athletics";
-            this.Athletics.Size = new System.Drawing.Size(14, 16);
+            this.Athletics.Size = new System.Drawing.Size(0, 16);
             this.Athletics.TabIndex = 20;
-            this.Athletics.Text = "5";
             // 
             // Arcana
             // 
             this.Arcana.AutoSize = true;
             this.Arcana.Location = new System.Drawing.Point(145, 92);
             this.Arcana.Name = "Arcana";
-            this.Arcana.Size = new System.Drawing.Size(14, 16);
+            this.Arcana.Size = new System.Drawing.Size(0, 16);
             this.Arcana.TabIndex = 19;
-            this.Arcana.Text = "5";
             // 
             // AnimalHandling
             // 
             this.AnimalHandling.AutoSize = true;
             this.AnimalHandling.Location = new System.Drawing.Point(145, 62);
             this.AnimalHandling.Name = "AnimalHandling";
-            this.AnimalHandling.Size = new System.Drawing.Size(14, 16);
+            this.AnimalHandling.Size = new System.Drawing.Size(0, 16);
             this.AnimalHandling.TabIndex = 18;
-            this.AnimalHandling.Text = "5";
             // 
             // Acrobatics
             // 
             this.Acrobatics.AutoSize = true;
             this.Acrobatics.Location = new System.Drawing.Point(145, 29);
             this.Acrobatics.Name = "Acrobatics";
-            this.Acrobatics.Size = new System.Drawing.Size(14, 16);
+            this.Acrobatics.Size = new System.Drawing.Size(0, 16);
             this.Acrobatics.TabIndex = 17;
-            this.Acrobatics.Text = "5";
             // 
             // SurvLabel
             // 
