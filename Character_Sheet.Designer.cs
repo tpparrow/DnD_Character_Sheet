@@ -62,6 +62,24 @@
             this.DexterityLabel = new System.Windows.Forms.Label();
             this.StrengthLabel = new System.Windows.Forms.Label();
             this.Skills = new System.Windows.Forms.GroupBox();
+            this.Performance = new System.Windows.Forms.Label();
+            this.Persuasion = new System.Windows.Forms.Label();
+            this.SleightofHand = new System.Windows.Forms.Label();
+            this.Survival = new System.Windows.Forms.Label();
+            this.Stealth = new System.Windows.Forms.Label();
+            this.Religion = new System.Windows.Forms.Label();
+            this.Perception = new System.Windows.Forms.Label();
+            this.Nature = new System.Windows.Forms.Label();
+            this.Medicine = new System.Windows.Forms.Label();
+            this.Intimidation = new System.Windows.Forms.Label();
+            this.Investigation = new System.Windows.Forms.Label();
+            this.Insight = new System.Windows.Forms.Label();
+            this.History = new System.Windows.Forms.Label();
+            this.Deception = new System.Windows.Forms.Label();
+            this.Athletics = new System.Windows.Forms.Label();
+            this.Arcana = new System.Windows.Forms.Label();
+            this.AnimalHandling = new System.Windows.Forms.Label();
+            this.Acrobatics = new System.Windows.Forms.Label();
             this.SurvLabel = new System.Windows.Forms.Label();
             this.SteaLabel = new System.Windows.Forms.Label();
             this.SleiLabel = new System.Windows.Forms.Label();
@@ -473,6 +491,24 @@
             // 
             // Skills
             // 
+            this.Skills.Controls.Add(this.Performance);
+            this.Skills.Controls.Add(this.Persuasion);
+            this.Skills.Controls.Add(this.SleightofHand);
+            this.Skills.Controls.Add(this.Survival);
+            this.Skills.Controls.Add(this.Stealth);
+            this.Skills.Controls.Add(this.Religion);
+            this.Skills.Controls.Add(this.Perception);
+            this.Skills.Controls.Add(this.Nature);
+            this.Skills.Controls.Add(this.Medicine);
+            this.Skills.Controls.Add(this.Intimidation);
+            this.Skills.Controls.Add(this.Investigation);
+            this.Skills.Controls.Add(this.Insight);
+            this.Skills.Controls.Add(this.History);
+            this.Skills.Controls.Add(this.Deception);
+            this.Skills.Controls.Add(this.Athletics);
+            this.Skills.Controls.Add(this.Arcana);
+            this.Skills.Controls.Add(this.AnimalHandling);
+            this.Skills.Controls.Add(this.Acrobatics);
             this.Skills.Controls.Add(this.SurvLabel);
             this.Skills.Controls.Add(this.SteaLabel);
             this.Skills.Controls.Add(this.SleiLabel);
@@ -493,15 +529,177 @@
             this.Skills.Controls.Add(this.AcroLabel);
             this.Skills.Location = new System.Drawing.Point(355, 332);
             this.Skills.Name = "Skills";
-            this.Skills.Size = new System.Drawing.Size(464, 198);
+            this.Skills.Size = new System.Drawing.Size(514, 198);
             this.Skills.TabIndex = 9;
             this.Skills.TabStop = false;
             this.Skills.Text = "Skills";
             // 
+            // Performance
+            // 
+            this.Performance.AutoSize = true;
+            this.Performance.Location = new System.Drawing.Point(475, 33);
+            this.Performance.Name = "Performance";
+            this.Performance.Size = new System.Drawing.Size(14, 16);
+            this.Performance.TabIndex = 34;
+            this.Performance.Text = "5";
+            // 
+            // Persuasion
+            // 
+            this.Persuasion.AutoSize = true;
+            this.Persuasion.Location = new System.Drawing.Point(475, 61);
+            this.Persuasion.Name = "Persuasion";
+            this.Persuasion.Size = new System.Drawing.Size(14, 16);
+            this.Persuasion.TabIndex = 33;
+            this.Persuasion.Text = "5";
+            // 
+            // SleightofHand
+            // 
+            this.SleightofHand.AutoSize = true;
+            this.SleightofHand.Location = new System.Drawing.Point(475, 114);
+            this.SleightofHand.Name = "SleightofHand";
+            this.SleightofHand.Size = new System.Drawing.Size(14, 16);
+            this.SleightofHand.TabIndex = 32;
+            this.SleightofHand.Text = "5";
+            // 
+            // Survival
+            // 
+            this.Survival.AutoSize = true;
+            this.Survival.Location = new System.Drawing.Point(475, 164);
+            this.Survival.Name = "Survival";
+            this.Survival.Size = new System.Drawing.Size(14, 16);
+            this.Survival.TabIndex = 31;
+            this.Survival.Text = "5";
+            // 
+            // Stealth
+            // 
+            this.Stealth.AutoSize = true;
+            this.Stealth.Location = new System.Drawing.Point(475, 140);
+            this.Stealth.Name = "Stealth";
+            this.Stealth.Size = new System.Drawing.Size(14, 16);
+            this.Stealth.TabIndex = 30;
+            this.Stealth.Text = "5";
+            // 
+            // Religion
+            // 
+            this.Religion.AutoSize = true;
+            this.Religion.Location = new System.Drawing.Point(475, 84);
+            this.Religion.Name = "Religion";
+            this.Religion.Size = new System.Drawing.Size(14, 16);
+            this.Religion.TabIndex = 29;
+            this.Religion.Text = "5";
+            // 
+            // Perception
+            // 
+            this.Perception.AutoSize = true;
+            this.Perception.Location = new System.Drawing.Point(302, 164);
+            this.Perception.Name = "Perception";
+            this.Perception.Size = new System.Drawing.Size(14, 16);
+            this.Perception.TabIndex = 28;
+            this.Perception.Text = "5";
+            // 
+            // Nature
+            // 
+            this.Nature.AutoSize = true;
+            this.Nature.Location = new System.Drawing.Point(302, 146);
+            this.Nature.Name = "Nature";
+            this.Nature.Size = new System.Drawing.Size(14, 16);
+            this.Nature.TabIndex = 27;
+            this.Nature.Text = "5";
+            // 
+            // Medicine
+            // 
+            this.Medicine.AutoSize = true;
+            this.Medicine.Location = new System.Drawing.Point(302, 118);
+            this.Medicine.Name = "Medicine";
+            this.Medicine.Size = new System.Drawing.Size(14, 16);
+            this.Medicine.TabIndex = 26;
+            this.Medicine.Text = "5";
+            // 
+            // Intimidation
+            // 
+            this.Intimidation.AutoSize = true;
+            this.Intimidation.Location = new System.Drawing.Point(302, 62);
+            this.Intimidation.Name = "Intimidation";
+            this.Intimidation.Size = new System.Drawing.Size(14, 16);
+            this.Intimidation.TabIndex = 25;
+            this.Intimidation.Text = "5";
+            // 
+            // Investigation
+            // 
+            this.Investigation.AutoSize = true;
+            this.Investigation.Location = new System.Drawing.Point(302, 92);
+            this.Investigation.Name = "Investigation";
+            this.Investigation.Size = new System.Drawing.Size(14, 16);
+            this.Investigation.TabIndex = 24;
+            this.Investigation.Text = "5";
+            // 
+            // Insight
+            // 
+            this.Insight.AutoSize = true;
+            this.Insight.Location = new System.Drawing.Point(302, 34);
+            this.Insight.Name = "Insight";
+            this.Insight.Size = new System.Drawing.Size(14, 16);
+            this.Insight.TabIndex = 23;
+            this.Insight.Text = "5";
+            // 
+            // History
+            // 
+            this.History.AutoSize = true;
+            this.History.Location = new System.Drawing.Point(145, 167);
+            this.History.Name = "History";
+            this.History.Size = new System.Drawing.Size(14, 16);
+            this.History.TabIndex = 22;
+            this.History.Text = "5";
+            // 
+            // Deception
+            // 
+            this.Deception.AutoSize = true;
+            this.Deception.Location = new System.Drawing.Point(146, 146);
+            this.Deception.Name = "Deception";
+            this.Deception.Size = new System.Drawing.Size(14, 16);
+            this.Deception.TabIndex = 21;
+            this.Deception.Text = "5";
+            // 
+            // Athletics
+            // 
+            this.Athletics.AutoSize = true;
+            this.Athletics.Location = new System.Drawing.Point(146, 117);
+            this.Athletics.Name = "Athletics";
+            this.Athletics.Size = new System.Drawing.Size(14, 16);
+            this.Athletics.TabIndex = 20;
+            this.Athletics.Text = "5";
+            // 
+            // Arcana
+            // 
+            this.Arcana.AutoSize = true;
+            this.Arcana.Location = new System.Drawing.Point(145, 92);
+            this.Arcana.Name = "Arcana";
+            this.Arcana.Size = new System.Drawing.Size(14, 16);
+            this.Arcana.TabIndex = 19;
+            this.Arcana.Text = "5";
+            // 
+            // AnimalHandling
+            // 
+            this.AnimalHandling.AutoSize = true;
+            this.AnimalHandling.Location = new System.Drawing.Point(145, 62);
+            this.AnimalHandling.Name = "AnimalHandling";
+            this.AnimalHandling.Size = new System.Drawing.Size(14, 16);
+            this.AnimalHandling.TabIndex = 18;
+            this.AnimalHandling.Text = "5";
+            // 
+            // Acrobatics
+            // 
+            this.Acrobatics.AutoSize = true;
+            this.Acrobatics.Location = new System.Drawing.Point(145, 29);
+            this.Acrobatics.Name = "Acrobatics";
+            this.Acrobatics.Size = new System.Drawing.Size(14, 16);
+            this.Acrobatics.TabIndex = 17;
+            this.Acrobatics.Text = "5";
+            // 
             // SurvLabel
             // 
             this.SurvLabel.AutoSize = true;
-            this.SurvLabel.Location = new System.Drawing.Point(330, 165);
+            this.SurvLabel.Location = new System.Drawing.Point(359, 167);
             this.SurvLabel.Name = "SurvLabel";
             this.SurvLabel.Size = new System.Drawing.Size(55, 16);
             this.SurvLabel.TabIndex = 12;
@@ -510,7 +708,7 @@
             // SteaLabel
             // 
             this.SteaLabel.AutoSize = true;
-            this.SteaLabel.Location = new System.Drawing.Point(330, 138);
+            this.SteaLabel.Location = new System.Drawing.Point(359, 140);
             this.SteaLabel.Name = "SteaLabel";
             this.SteaLabel.Size = new System.Drawing.Size(48, 16);
             this.SteaLabel.TabIndex = 13;
@@ -519,7 +717,7 @@
             // SleiLabel
             // 
             this.SleiLabel.AutoSize = true;
-            this.SleiLabel.Location = new System.Drawing.Point(330, 112);
+            this.SleiLabel.Location = new System.Drawing.Point(359, 114);
             this.SleiLabel.Name = "SleiLabel";
             this.SleiLabel.Size = new System.Drawing.Size(98, 16);
             this.SleiLabel.TabIndex = 14;
@@ -528,7 +726,7 @@
             // ReliLabel
             // 
             this.ReliLabel.AutoSize = true;
-            this.ReliLabel.Location = new System.Drawing.Point(330, 84);
+            this.ReliLabel.Location = new System.Drawing.Point(359, 86);
             this.ReliLabel.Name = "ReliLabel";
             this.ReliLabel.Size = new System.Drawing.Size(57, 16);
             this.ReliLabel.TabIndex = 15;
@@ -537,7 +735,7 @@
             // PersLabel
             // 
             this.PersLabel.AutoSize = true;
-            this.PersLabel.Location = new System.Drawing.Point(330, 59);
+            this.PersLabel.Location = new System.Drawing.Point(359, 61);
             this.PersLabel.Name = "PersLabel";
             this.PersLabel.Size = new System.Drawing.Size(75, 16);
             this.PersLabel.TabIndex = 16;
@@ -546,7 +744,7 @@
             // PerfLabel
             // 
             this.PerfLabel.AutoSize = true;
-            this.PerfLabel.Location = new System.Drawing.Point(330, 32);
+            this.PerfLabel.Location = new System.Drawing.Point(359, 34);
             this.PerfLabel.Name = "PerfLabel";
             this.PerfLabel.Size = new System.Drawing.Size(84, 16);
             this.PerfLabel.TabIndex = 11;
@@ -555,7 +753,7 @@
             // MediLabel
             // 
             this.MediLabel.AutoSize = true;
-            this.MediLabel.Location = new System.Drawing.Point(180, 116);
+            this.MediLabel.Location = new System.Drawing.Point(196, 118);
             this.MediLabel.Name = "MediLabel";
             this.MediLabel.Size = new System.Drawing.Size(62, 16);
             this.MediLabel.TabIndex = 10;
@@ -564,7 +762,7 @@
             // NatuLabel
             // 
             this.NatuLabel.AutoSize = true;
-            this.NatuLabel.Location = new System.Drawing.Point(180, 138);
+            this.NatuLabel.Location = new System.Drawing.Point(196, 140);
             this.NatuLabel.Name = "NatuLabel";
             this.NatuLabel.Size = new System.Drawing.Size(47, 16);
             this.NatuLabel.TabIndex = 10;
@@ -573,7 +771,7 @@
             // PercLabel
             // 
             this.PercLabel.AutoSize = true;
-            this.PercLabel.Location = new System.Drawing.Point(180, 165);
+            this.PercLabel.Location = new System.Drawing.Point(196, 167);
             this.PercLabel.Name = "PercLabel";
             this.PercLabel.Size = new System.Drawing.Size(72, 16);
             this.PercLabel.TabIndex = 9;
@@ -582,7 +780,7 @@
             // InvesLabel
             // 
             this.InvesLabel.AutoSize = true;
-            this.InvesLabel.Location = new System.Drawing.Point(179, 88);
+            this.InvesLabel.Location = new System.Drawing.Point(195, 90);
             this.InvesLabel.Name = "InvesLabel";
             this.InvesLabel.Size = new System.Drawing.Size(82, 16);
             this.InvesLabel.TabIndex = 8;
@@ -636,7 +834,7 @@
             // InsiLabel
             // 
             this.InsiLabel.AutoSize = true;
-            this.InsiLabel.Location = new System.Drawing.Point(179, 32);
+            this.InsiLabel.Location = new System.Drawing.Point(195, 34);
             this.InsiLabel.Name = "InsiLabel";
             this.InsiLabel.Size = new System.Drawing.Size(45, 16);
             this.InsiLabel.TabIndex = 2;
@@ -645,7 +843,7 @@
             // IntiLabel
             // 
             this.IntiLabel.AutoSize = true;
-            this.IntiLabel.Location = new System.Drawing.Point(179, 59);
+            this.IntiLabel.Location = new System.Drawing.Point(195, 61);
             this.IntiLabel.Name = "IntiLabel";
             this.IntiLabel.Size = new System.Drawing.Size(74, 16);
             this.IntiLabel.TabIndex = 1;
@@ -726,7 +924,7 @@
             "Urchin"});
             this.backgroundBox.Location = new System.Drawing.Point(183, 21);
             this.backgroundBox.Name = "backgroundBox";
-            this.backgroundBox.Size = new System.Drawing.Size(121, 24);
+            this.backgroundBox.Size = new System.Drawing.Size(185, 24);
             this.backgroundBox.TabIndex = 15;
             // 
             // ProficienciesLabel
@@ -816,7 +1014,7 @@
             this.StatBox.Controls.Add(this.HPLabel);
             this.StatBox.Location = new System.Drawing.Point(355, 21);
             this.StatBox.Name = "StatBox";
-            this.StatBox.Size = new System.Drawing.Size(461, 299);
+            this.StatBox.Size = new System.Drawing.Size(514, 299);
             this.StatBox.TabIndex = 23;
             this.StatBox.TabStop = false;
             // 
@@ -859,7 +1057,7 @@
             this.PersonalityBox.Controls.Add(this.TraitLabel);
             this.PersonalityBox.Location = new System.Drawing.Point(28, 555);
             this.PersonalityBox.Name = "PersonalityBox";
-            this.PersonalityBox.Size = new System.Drawing.Size(788, 216);
+            this.PersonalityBox.Size = new System.Drawing.Size(841, 216);
             this.PersonalityBox.TabIndex = 24;
             this.PersonalityBox.TabStop = false;
             // 
@@ -941,7 +1139,7 @@
             this.TutorialBox.Controls.Add(this.TutoralLabel);
             this.TutorialBox.Location = new System.Drawing.Point(28, 777);
             this.TutorialBox.Name = "TutorialBox";
-            this.TutorialBox.Size = new System.Drawing.Size(791, 80);
+            this.TutorialBox.Size = new System.Drawing.Size(841, 80);
             this.TutorialBox.TabIndex = 25;
             this.TutorialBox.TabStop = false;
             this.TutorialBox.Text = "Tutorial";
@@ -959,7 +1157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 883);
+            this.ClientSize = new System.Drawing.Size(898, 883);
             this.Controls.Add(this.TutorialBox);
             this.Controls.Add(this.PersonalityBox);
             this.Controls.Add(this.StatBox);
@@ -1070,5 +1268,23 @@
         private System.Windows.Forms.Label traits;
         private System.Windows.Forms.GroupBox TutorialBox;
         private System.Windows.Forms.Label TutoralLabel;
+        private System.Windows.Forms.Label Insight;
+        private System.Windows.Forms.Label History;
+        private System.Windows.Forms.Label Deception;
+        private System.Windows.Forms.Label Athletics;
+        private System.Windows.Forms.Label Arcana;
+        private System.Windows.Forms.Label AnimalHandling;
+        private System.Windows.Forms.Label Acrobatics;
+        private System.Windows.Forms.Label Perception;
+        private System.Windows.Forms.Label Nature;
+        private System.Windows.Forms.Label Medicine;
+        private System.Windows.Forms.Label Intimidation;
+        private System.Windows.Forms.Label Investigation;
+        private System.Windows.Forms.Label Performance;
+        private System.Windows.Forms.Label Persuasion;
+        private System.Windows.Forms.Label SleightofHand;
+        private System.Windows.Forms.Label Survival;
+        private System.Windows.Forms.Label Stealth;
+        private System.Windows.Forms.Label Religion;
     }
 }
