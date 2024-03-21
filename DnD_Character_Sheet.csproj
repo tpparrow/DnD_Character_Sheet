@@ -46,17 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="MainMenu.cs">
-
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="File_Manager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="File_Manager.Designer.cs">
       <DependentUpon>File_Manager.cs</DependentUpon>
-    </Compile>
-
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -66,11 +63,10 @@
 
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
 
     <EmbeddedResource Include="File_Manager.resx">
       <DependentUpon>File_Manager.cs</DependentUpon>
-    </EmbeddedResource>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

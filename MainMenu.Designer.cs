@@ -36,7 +36,7 @@
             this.CreateButton = new System.Windows.Forms.Button();
             this.BlurbLabel = new System.Windows.Forms.Label();
             this.CreditsLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.loadButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,10 +45,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
 <<<<<<< HEAD:MainMenu.Designer.cs
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(98, 59);
+            this.label1.Location = new System.Drawing.Point(163, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(588, 74);
+            this.label1.Size = new System.Drawing.Size(461, 74);
             this.label1.TabIndex = 0;
+<<<<<<< HEAD
             this.label1.Text = "D&&D Character Manager";
 =======
             this.label1.Font = new System.Drawing.Font("Algerian", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -59,6 +60,9 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "DnD Character Manager";
 >>>>>>> f08b63d67ac90463f10b976a64a73ff5d2b23873:Form1.Designer.cs
+=======
+            this.label1.Text = "D and D Character Manager";
+>>>>>>> master
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CreateButton
@@ -121,8 +125,9 @@
     "Elaina Vogel, and Matthew Woodward";
             this.CreditsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button1
+            // loadButton
             // 
+<<<<<<< HEAD
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = global::DnD_Character_Sheet.Properties.Resources.brownButton;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -140,6 +145,20 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "LOAD";
             this.button1.UseVisualStyleBackColor = false;
+=======
+            this.loadButton.BackColor = System.Drawing.Color.Transparent;
+            this.loadButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("loadButton.BackgroundImage")));
+            this.loadButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.loadButton.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadButton.Location = new System.Drawing.Point(342, 256);
+            this.loadButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.loadButton.Name = "loadButton";
+            this.loadButton.Size = new System.Drawing.Size(105, 52);
+            this.loadButton.TabIndex = 6;
+            this.loadButton.Text = "LOAD";
+            this.loadButton.UseVisualStyleBackColor = false;
+            this.loadButton.Click += new System.EventHandler(this.button1_Click);
+>>>>>>> master
             // 
             // exitButton
             // 
@@ -179,6 +198,7 @@
             this.BackgroundImage = global::DnD_Character_Sheet.Properties.Resources.arcanRooftop;
             this.ClientSize = new System.Drawing.Size(827, 479);
             this.Controls.Add(this.exitButton);
+<<<<<<< HEAD
 =======
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackgroundImage = global::DnD_Character_Sheet.Properties.Resources.Screenshot_2024_03_11_182324;
@@ -187,6 +207,9 @@
             this.Controls.Add(this.button2);
 >>>>>>> f08b63d67ac90463f10b976a64a73ff5d2b23873:Form1.Designer.cs
             this.Controls.Add(this.button1);
+=======
+            this.Controls.Add(this.loadButton);
+>>>>>>> master
             this.Controls.Add(this.CreditsLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BlurbLabel);
@@ -206,7 +229,7 @@
         private System.Windows.Forms.Button CreateButton;
         private System.Windows.Forms.Label BlurbLabel;
         private System.Windows.Forms.Label CreditsLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button loadButton;
         private System.Windows.Forms.Button exitButton;
     }
 }
