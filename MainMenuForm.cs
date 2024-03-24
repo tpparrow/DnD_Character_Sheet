@@ -33,5 +33,12 @@ namespace DnD_Character_Sheet
         {
             this.Close();
         }
+
+        private void CreateButton_Click(object sender, EventArgs e)
+        {
+            Character_Sheet character_Sheet = new Character_Sheet();
+            character_Sheet.Show();
+
+        }
     }
 }
