@@ -100,13 +100,13 @@
             this.AcroLabel = new System.Windows.Forms.Label();
             this.disPointsLabel = new System.Windows.Forms.Label();
             this.pointsLabel = new System.Windows.Forms.Label();
-            this.HPLabel = new System.Windows.Forms.Label();
-            this.XPLabel = new System.Windows.Forms.Label();
+            this.HitPointsLabel = new System.Windows.Forms.Label();
+            this.ExperiencePointsLabel = new System.Windows.Forms.Label();
             this.SelectBackgroundLabel = new System.Windows.Forms.Label();
             this.backgroundBox = new System.Windows.Forms.ComboBox();
             this.ProficienciesLabel = new System.Windows.Forms.Label();
             this.FeatureLabel = new System.Windows.Forms.Label();
-            this.CarCapLabel = new System.Windows.Forms.Label();
+            this.CarryCapacityLabel = new System.Windows.Forms.Label();
             this.ArmorClassLabel = new System.Windows.Forms.Label();
             this.InitiativeLabel = new System.Windows.Forms.Label();
             this.LevelLabel = new System.Windows.Forms.Label();
@@ -126,6 +126,16 @@
             this.TraitLabel = new System.Windows.Forms.Label();
             this.TutorialBox = new System.Windows.Forms.GroupBox();
             this.TutoralLabel = new System.Windows.Forms.Label();
+            this.InspirationLabel = new System.Windows.Forms.Label();
+            this.BackButton = new System.Windows.Forms.Button();
+            this.CreateButton = new System.Windows.Forms.Button();
+            this.acLabel = new System.Windows.Forms.Label();
+            this.hpLabel = new System.Windows.Forms.Label();
+            this.xpLabel = new System.Windows.Forms.Label();
+            this.level = new System.Windows.Forms.Label();
+            this.ccLabel = new System.Windows.Forms.Label();
+            this.speed = new System.Windows.Forms.Label();
+            this.initiative = new System.Windows.Forms.Label();
             this.AttributesBox.SuspendLayout();
             this.Skills.SuspendLayout();
             this.PlayerBox.SuspendLayout();
@@ -156,7 +166,7 @@
             // 
             this.nameBox.Location = new System.Drawing.Point(134, 23);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(121, 22);
+            this.nameBox.Size = new System.Drawing.Size(150, 22);
             this.nameBox.TabIndex = 2;
             // 
             // classBox
@@ -177,7 +187,7 @@
             "Wizard"});
             this.classBox.Location = new System.Drawing.Point(134, 62);
             this.classBox.Name = "classBox";
-            this.classBox.Size = new System.Drawing.Size(121, 24);
+            this.classBox.Size = new System.Drawing.Size(150, 24);
             this.classBox.TabIndex = 3;
             // 
             // raceBox
@@ -195,7 +205,7 @@
             "Tiefling"});
             this.raceBox.Location = new System.Drawing.Point(134, 110);
             this.raceBox.Name = "raceBox";
-            this.raceBox.Size = new System.Drawing.Size(121, 24);
+            this.raceBox.Size = new System.Drawing.Size(150, 24);
             this.raceBox.TabIndex = 4;
             // 
             // SelectRaceLabel
@@ -231,7 +241,7 @@
             "Chaotic Evil"});
             this.moralityBox.Location = new System.Drawing.Point(134, 147);
             this.moralityBox.Name = "moralityBox";
-            this.moralityBox.Size = new System.Drawing.Size(121, 24);
+            this.moralityBox.Size = new System.Drawing.Size(150, 24);
             this.moralityBox.TabIndex = 7;
             // 
             // AttributesBox
@@ -527,7 +537,7 @@
             this.Skills.Controls.Add(this.InsiLabel);
             this.Skills.Controls.Add(this.IntiLabel);
             this.Skills.Controls.Add(this.AcroLabel);
-            this.Skills.Location = new System.Drawing.Point(355, 332);
+            this.Skills.Location = new System.Drawing.Point(355, 351);
             this.Skills.Name = "Skills";
             this.Skills.Size = new System.Drawing.Size(514, 198);
             this.Skills.TabIndex = 9;
@@ -857,23 +867,23 @@
             this.pointsLabel.Size = new System.Drawing.Size(0, 16);
             this.pointsLabel.TabIndex = 11;
             // 
-            // HPLabel
+            // HitPointsLabel
             // 
-            this.HPLabel.AutoSize = true;
-            this.HPLabel.Location = new System.Drawing.Point(21, 213);
-            this.HPLabel.Name = "HPLabel";
-            this.HPLabel.Size = new System.Drawing.Size(63, 16);
-            this.HPLabel.TabIndex = 12;
-            this.HPLabel.Text = "Hit Points";
+            this.HitPointsLabel.AutoSize = true;
+            this.HitPointsLabel.Location = new System.Drawing.Point(21, 213);
+            this.HitPointsLabel.Name = "HitPointsLabel";
+            this.HitPointsLabel.Size = new System.Drawing.Size(63, 16);
+            this.HitPointsLabel.TabIndex = 12;
+            this.HitPointsLabel.Text = "Hit Points";
             // 
-            // XPLabel
+            // ExperiencePointsLabel
             // 
-            this.XPLabel.AutoSize = true;
-            this.XPLabel.Location = new System.Drawing.Point(21, 263);
-            this.XPLabel.Name = "XPLabel";
-            this.XPLabel.Size = new System.Drawing.Size(115, 16);
-            this.XPLabel.TabIndex = 13;
-            this.XPLabel.Text = "Experience Points";
+            this.ExperiencePointsLabel.AutoSize = true;
+            this.ExperiencePointsLabel.Location = new System.Drawing.Point(21, 263);
+            this.ExperiencePointsLabel.Name = "ExperiencePointsLabel";
+            this.ExperiencePointsLabel.Size = new System.Drawing.Size(115, 16);
+            this.ExperiencePointsLabel.TabIndex = 13;
+            this.ExperiencePointsLabel.Text = "Experience Points";
             // 
             // SelectBackgroundLabel
             // 
@@ -893,13 +903,10 @@
             "Criminal",
             "Entertainer",
             "Folk Hero",
-            "Gladiator",
             "Guild Artisan",
             "Hermit",
-            "Knight",
             "Noble",
             "Outlander",
-            "Pirate",
             "Sage",
             "Sailor",
             "Soldier",
@@ -908,6 +915,7 @@
             this.backgroundBox.Name = "backgroundBox";
             this.backgroundBox.Size = new System.Drawing.Size(185, 24);
             this.backgroundBox.TabIndex = 15;
+            this.backgroundBox.SelectedIndexChanged += new System.EventHandler(this.backgroundBox_SelectedIndexChanged);
             // 
             // ProficienciesLabel
             // 
@@ -927,14 +935,14 @@
             this.FeatureLabel.TabIndex = 17;
             this.FeatureLabel.Text = "Feature:";
             // 
-            // CarCapLabel
+            // CarryCapacityLabel
             // 
-            this.CarCapLabel.AutoSize = true;
-            this.CarCapLabel.Location = new System.Drawing.Point(173, 213);
-            this.CarCapLabel.Name = "CarCapLabel";
-            this.CarCapLabel.Size = new System.Drawing.Size(113, 16);
-            this.CarCapLabel.TabIndex = 18;
-            this.CarCapLabel.Text = "Carrying Capacity";
+            this.CarryCapacityLabel.AutoSize = true;
+            this.CarryCapacityLabel.Location = new System.Drawing.Point(173, 213);
+            this.CarryCapacityLabel.Name = "CarryCapacityLabel";
+            this.CarryCapacityLabel.Size = new System.Drawing.Size(113, 16);
+            this.CarryCapacityLabel.TabIndex = 18;
+            this.CarryCapacityLabel.Text = "Carrying Capacity";
             // 
             // ArmorClassLabel
             // 
@@ -981,6 +989,14 @@
             // 
             // StatBox
             // 
+            this.StatBox.Controls.Add(this.initiative);
+            this.StatBox.Controls.Add(this.speed);
+            this.StatBox.Controls.Add(this.ccLabel);
+            this.StatBox.Controls.Add(this.level);
+            this.StatBox.Controls.Add(this.xpLabel);
+            this.StatBox.Controls.Add(this.hpLabel);
+            this.StatBox.Controls.Add(this.acLabel);
+            this.StatBox.Controls.Add(this.InspirationLabel);
             this.StatBox.Controls.Add(this.features);
             this.StatBox.Controls.Add(this.proficiencies);
             this.StatBox.Controls.Add(this.SpeedLabel);
@@ -988,15 +1004,15 @@
             this.StatBox.Controls.Add(this.backgroundBox);
             this.StatBox.Controls.Add(this.LevelLabel);
             this.StatBox.Controls.Add(this.ProficienciesLabel);
-            this.StatBox.Controls.Add(this.XPLabel);
-            this.StatBox.Controls.Add(this.CarCapLabel);
+            this.StatBox.Controls.Add(this.ExperiencePointsLabel);
+            this.StatBox.Controls.Add(this.CarryCapacityLabel);
             this.StatBox.Controls.Add(this.InitiativeLabel);
             this.StatBox.Controls.Add(this.FeatureLabel);
             this.StatBox.Controls.Add(this.ArmorClassLabel);
-            this.StatBox.Controls.Add(this.HPLabel);
-            this.StatBox.Location = new System.Drawing.Point(355, 21);
+            this.StatBox.Controls.Add(this.HitPointsLabel);
+            this.StatBox.Location = new System.Drawing.Point(355, 23);
             this.StatBox.Name = "StatBox";
-            this.StatBox.Size = new System.Drawing.Size(514, 299);
+            this.StatBox.Size = new System.Drawing.Size(507, 321);
             this.StatBox.TabIndex = 23;
             this.StatBox.TabStop = false;
             // 
@@ -1135,11 +1151,103 @@
             this.TutoralLabel.TabIndex = 0;
             this.TutoralLabel.Text = "Click on a label to learn more.";
             // 
+            // InspirationLabel
+            // 
+            this.InspirationLabel.AutoSize = true;
+            this.InspirationLabel.Location = new System.Drawing.Point(302, 263);
+            this.InspirationLabel.Name = "InspirationLabel";
+            this.InspirationLabel.Size = new System.Drawing.Size(68, 16);
+            this.InspirationLabel.TabIndex = 25;
+            this.InspirationLabel.Text = "Inspiration";
+            // 
+            // BackButton
+            // 
+            this.BackButton.Location = new System.Drawing.Point(76, 882);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(124, 44);
+            this.BackButton.TabIndex = 26;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            // 
+            // CreateButton
+            // 
+            this.CreateButton.Location = new System.Drawing.Point(645, 882);
+            this.CreateButton.Name = "CreateButton";
+            this.CreateButton.Size = new System.Drawing.Size(124, 44);
+            this.CreateButton.TabIndex = 27;
+            this.CreateButton.Text = "Create";
+            this.CreateButton.UseVisualStyleBackColor = true;
+            // 
+            // acLabel
+            // 
+            this.acLabel.AutoSize = true;
+            this.acLabel.Location = new System.Drawing.Point(40, 186);
+            this.acLabel.Name = "acLabel";
+            this.acLabel.Size = new System.Drawing.Size(21, 16);
+            this.acLabel.TabIndex = 26;
+            this.acLabel.Text = "20";
+            // 
+            // hpLabel
+            // 
+            this.hpLabel.AutoSize = true;
+            this.hpLabel.Location = new System.Drawing.Point(40, 238);
+            this.hpLabel.Name = "hpLabel";
+            this.hpLabel.Size = new System.Drawing.Size(21, 16);
+            this.hpLabel.TabIndex = 27;
+            this.hpLabel.Text = "10";
+            // 
+            // xpLabel
+            // 
+            this.xpLabel.AutoSize = true;
+            this.xpLabel.Location = new System.Drawing.Point(61, 295);
+            this.xpLabel.Name = "xpLabel";
+            this.xpLabel.Size = new System.Drawing.Size(14, 16);
+            this.xpLabel.TabIndex = 28;
+            this.xpLabel.Text = "0";
+            // 
+            // level
+            // 
+            this.level.AutoSize = true;
+            this.level.Location = new System.Drawing.Point(195, 298);
+            this.level.Name = "level";
+            this.level.Size = new System.Drawing.Size(14, 16);
+            this.level.TabIndex = 29;
+            this.level.Text = "1";
+            // 
+            // ccLabel
+            // 
+            this.ccLabel.AutoSize = true;
+            this.ccLabel.Location = new System.Drawing.Point(218, 240);
+            this.ccLabel.Name = "ccLabel";
+            this.ccLabel.Size = new System.Drawing.Size(28, 16);
+            this.ccLabel.TabIndex = 30;
+            this.ccLabel.Text = "100";
+            // 
+            // speed
+            // 
+            this.speed.AutoSize = true;
+            this.speed.Location = new System.Drawing.Point(342, 189);
+            this.speed.Name = "speed";
+            this.speed.Size = new System.Drawing.Size(21, 16);
+            this.speed.TabIndex = 31;
+            this.speed.Text = "30";
+            // 
+            // initiative
+            // 
+            this.initiative.AutoSize = true;
+            this.initiative.Location = new System.Drawing.Point(146, 186);
+            this.initiative.Name = "initiative";
+            this.initiative.Size = new System.Drawing.Size(161, 16);
+            this.initiative.TabIndex = 32;
+            this.initiative.Text = "idk like a roll or something";
+            // 
             // Character_Sheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 883);
+            this.ClientSize = new System.Drawing.Size(1023, 938);
+            this.Controls.Add(this.CreateButton);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.TutorialBox);
             this.Controls.Add(this.PersonalityBox);
             this.Controls.Add(this.StatBox);
@@ -1224,13 +1332,13 @@
         private System.Windows.Forms.Label SleiLabel;
         private System.Windows.Forms.Label ReliLabel;
         private System.Windows.Forms.Label PersLabel;
-        private System.Windows.Forms.Label HPLabel;
-        private System.Windows.Forms.Label XPLabel;
+        private System.Windows.Forms.Label HitPointsLabel;
+        private System.Windows.Forms.Label ExperiencePointsLabel;
         private System.Windows.Forms.Label SelectBackgroundLabel;
         private System.Windows.Forms.ComboBox backgroundBox;
         private System.Windows.Forms.Label ProficienciesLabel;
         private System.Windows.Forms.Label FeatureLabel;
-        private System.Windows.Forms.Label CarCapLabel;
+        private System.Windows.Forms.Label CarryCapacityLabel;
         private System.Windows.Forms.Label ArmorClassLabel;
         private System.Windows.Forms.Label InitiativeLabel;
         private System.Windows.Forms.Label LevelLabel;
@@ -1268,5 +1376,15 @@
         private System.Windows.Forms.Label Survival;
         private System.Windows.Forms.Label Stealth;
         private System.Windows.Forms.Label Religion;
+        private System.Windows.Forms.Label InspirationLabel;
+        private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button CreateButton;
+        private System.Windows.Forms.Label hpLabel;
+        private System.Windows.Forms.Label acLabel;
+        private System.Windows.Forms.Label ccLabel;
+        private System.Windows.Forms.Label level;
+        private System.Windows.Forms.Label xpLabel;
+        private System.Windows.Forms.Label speed;
+        private System.Windows.Forms.Label initiative;
     }
 }
