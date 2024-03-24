@@ -112,6 +112,14 @@
             this.LevelLabel = new System.Windows.Forms.Label();
             this.PlayerBox = new System.Windows.Forms.GroupBox();
             this.StatBox = new System.Windows.Forms.GroupBox();
+            this.initiative = new System.Windows.Forms.Label();
+            this.speed = new System.Windows.Forms.Label();
+            this.ccLabel = new System.Windows.Forms.Label();
+            this.level = new System.Windows.Forms.Label();
+            this.xpLabel = new System.Windows.Forms.Label();
+            this.hpLabel = new System.Windows.Forms.Label();
+            this.acLabel = new System.Windows.Forms.Label();
+            this.InspirationLabel = new System.Windows.Forms.Label();
             this.features = new System.Windows.Forms.Label();
             this.proficiencies = new System.Windows.Forms.Label();
             this.SpeedLabel = new System.Windows.Forms.Label();
@@ -126,16 +134,8 @@
             this.TraitLabel = new System.Windows.Forms.Label();
             this.TutorialBox = new System.Windows.Forms.GroupBox();
             this.TutoralLabel = new System.Windows.Forms.Label();
-            this.InspirationLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.CreateButton = new System.Windows.Forms.Button();
-            this.acLabel = new System.Windows.Forms.Label();
-            this.hpLabel = new System.Windows.Forms.Label();
-            this.xpLabel = new System.Windows.Forms.Label();
-            this.level = new System.Windows.Forms.Label();
-            this.ccLabel = new System.Windows.Forms.Label();
-            this.speed = new System.Windows.Forms.Label();
-            this.initiative = new System.Windows.Forms.Label();
             this.AttributesBox.SuspendLayout();
             this.Skills.SuspendLayout();
             this.PlayerBox.SuspendLayout();
@@ -1016,6 +1016,78 @@
             this.StatBox.TabIndex = 23;
             this.StatBox.TabStop = false;
             // 
+            // initiative
+            // 
+            this.initiative.AutoSize = true;
+            this.initiative.Location = new System.Drawing.Point(146, 186);
+            this.initiative.Name = "initiative";
+            this.initiative.Size = new System.Drawing.Size(161, 16);
+            this.initiative.TabIndex = 32;
+            this.initiative.Text = "idk like a roll or something";
+            // 
+            // speed
+            // 
+            this.speed.AutoSize = true;
+            this.speed.Location = new System.Drawing.Point(342, 189);
+            this.speed.Name = "speed";
+            this.speed.Size = new System.Drawing.Size(21, 16);
+            this.speed.TabIndex = 31;
+            this.speed.Text = "30";
+            // 
+            // ccLabel
+            // 
+            this.ccLabel.AutoSize = true;
+            this.ccLabel.Location = new System.Drawing.Point(218, 240);
+            this.ccLabel.Name = "ccLabel";
+            this.ccLabel.Size = new System.Drawing.Size(28, 16);
+            this.ccLabel.TabIndex = 30;
+            this.ccLabel.Text = "100";
+            // 
+            // level
+            // 
+            this.level.AutoSize = true;
+            this.level.Location = new System.Drawing.Point(195, 298);
+            this.level.Name = "level";
+            this.level.Size = new System.Drawing.Size(14, 16);
+            this.level.TabIndex = 29;
+            this.level.Text = "1";
+            // 
+            // xpLabel
+            // 
+            this.xpLabel.AutoSize = true;
+            this.xpLabel.Location = new System.Drawing.Point(61, 295);
+            this.xpLabel.Name = "xpLabel";
+            this.xpLabel.Size = new System.Drawing.Size(14, 16);
+            this.xpLabel.TabIndex = 28;
+            this.xpLabel.Text = "0";
+            // 
+            // hpLabel
+            // 
+            this.hpLabel.AutoSize = true;
+            this.hpLabel.Location = new System.Drawing.Point(40, 238);
+            this.hpLabel.Name = "hpLabel";
+            this.hpLabel.Size = new System.Drawing.Size(21, 16);
+            this.hpLabel.TabIndex = 27;
+            this.hpLabel.Text = "10";
+            // 
+            // acLabel
+            // 
+            this.acLabel.AutoSize = true;
+            this.acLabel.Location = new System.Drawing.Point(40, 186);
+            this.acLabel.Name = "acLabel";
+            this.acLabel.Size = new System.Drawing.Size(21, 16);
+            this.acLabel.TabIndex = 26;
+            this.acLabel.Text = "20";
+            // 
+            // InspirationLabel
+            // 
+            this.InspirationLabel.AutoSize = true;
+            this.InspirationLabel.Location = new System.Drawing.Point(302, 263);
+            this.InspirationLabel.Name = "InspirationLabel";
+            this.InspirationLabel.Size = new System.Drawing.Size(68, 16);
+            this.InspirationLabel.TabIndex = 25;
+            this.InspirationLabel.Text = "Inspiration";
+            // 
             // features
             // 
             this.features.AutoSize = true;
@@ -1030,9 +1102,9 @@
             this.proficiencies.AutoSize = true;
             this.proficiencies.Location = new System.Drawing.Point(145, 75);
             this.proficiencies.Name = "proficiencies";
-            this.proficiencies.Size = new System.Drawing.Size(183, 16);
+            this.proficiencies.Size = new System.Drawing.Size(7, 16);
             this.proficiencies.TabIndex = 23;
-            this.proficiencies.Text = "~~background dependent~~";
+            this.proficiencies.Text = "\r\n";
             // 
             // SpeedLabel
             // 
@@ -1151,15 +1223,6 @@
             this.TutoralLabel.TabIndex = 0;
             this.TutoralLabel.Text = "Click on a label to learn more.";
             // 
-            // InspirationLabel
-            // 
-            this.InspirationLabel.AutoSize = true;
-            this.InspirationLabel.Location = new System.Drawing.Point(302, 263);
-            this.InspirationLabel.Name = "InspirationLabel";
-            this.InspirationLabel.Size = new System.Drawing.Size(68, 16);
-            this.InspirationLabel.TabIndex = 25;
-            this.InspirationLabel.Text = "Inspiration";
-            // 
             // BackButton
             // 
             this.BackButton.Location = new System.Drawing.Point(76, 882);
@@ -1177,69 +1240,6 @@
             this.CreateButton.TabIndex = 27;
             this.CreateButton.Text = "Create";
             this.CreateButton.UseVisualStyleBackColor = true;
-            // 
-            // acLabel
-            // 
-            this.acLabel.AutoSize = true;
-            this.acLabel.Location = new System.Drawing.Point(40, 186);
-            this.acLabel.Name = "acLabel";
-            this.acLabel.Size = new System.Drawing.Size(21, 16);
-            this.acLabel.TabIndex = 26;
-            this.acLabel.Text = "20";
-            // 
-            // hpLabel
-            // 
-            this.hpLabel.AutoSize = true;
-            this.hpLabel.Location = new System.Drawing.Point(40, 238);
-            this.hpLabel.Name = "hpLabel";
-            this.hpLabel.Size = new System.Drawing.Size(21, 16);
-            this.hpLabel.TabIndex = 27;
-            this.hpLabel.Text = "10";
-            // 
-            // xpLabel
-            // 
-            this.xpLabel.AutoSize = true;
-            this.xpLabel.Location = new System.Drawing.Point(61, 295);
-            this.xpLabel.Name = "xpLabel";
-            this.xpLabel.Size = new System.Drawing.Size(14, 16);
-            this.xpLabel.TabIndex = 28;
-            this.xpLabel.Text = "0";
-            // 
-            // level
-            // 
-            this.level.AutoSize = true;
-            this.level.Location = new System.Drawing.Point(195, 298);
-            this.level.Name = "level";
-            this.level.Size = new System.Drawing.Size(14, 16);
-            this.level.TabIndex = 29;
-            this.level.Text = "1";
-            // 
-            // ccLabel
-            // 
-            this.ccLabel.AutoSize = true;
-            this.ccLabel.Location = new System.Drawing.Point(218, 240);
-            this.ccLabel.Name = "ccLabel";
-            this.ccLabel.Size = new System.Drawing.Size(28, 16);
-            this.ccLabel.TabIndex = 30;
-            this.ccLabel.Text = "100";
-            // 
-            // speed
-            // 
-            this.speed.AutoSize = true;
-            this.speed.Location = new System.Drawing.Point(342, 189);
-            this.speed.Name = "speed";
-            this.speed.Size = new System.Drawing.Size(21, 16);
-            this.speed.TabIndex = 31;
-            this.speed.Text = "30";
-            // 
-            // initiative
-            // 
-            this.initiative.AutoSize = true;
-            this.initiative.Location = new System.Drawing.Point(146, 186);
-            this.initiative.Name = "initiative";
-            this.initiative.Size = new System.Drawing.Size(161, 16);
-            this.initiative.TabIndex = 32;
-            this.initiative.Text = "idk like a roll or something";
             // 
             // Character_Sheet
             // 

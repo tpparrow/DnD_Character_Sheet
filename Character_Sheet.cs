@@ -147,47 +147,61 @@ namespace DnD_Character_Sheet
         private void UpdateProficiencyByBackground(string playerBackground)
         {
             ResetBackgroundBonuses();
+            proficiencies.Text = "";
 
             switch (playerBackground)
             {
                 case "Acolyte":
                     hasAcolyteBonus = true;
+                    proficiencies.Text = "Insight, Religion";
                     break;
                 case "Charlatan":
                     hasCharlatanBonus = true;
+                    proficiencies.Text = "Deception, Sleight of Hand";
                     break;
                 case "Criminal":
                     hasCriminalBonus = true;
+                    proficiencies.Text = "Deception, Stealth";
                     break;
                 case "Entertainer":
                     hasEntertainerBonus = true;
+                    proficiencies.Text = "Acrobatics, Performance";
                     break;
                 case "Folk Hero":
                     hasFolkHeroBonus = true;
+                    proficiencies.Text = "Animal Handling, Survival";
                     break;
                 case "Guild Artisan":
                     hasGuildArtisanBonus = true;
+                    proficiencies.Text = "Insight, Persuasion";
                     break;
                 case "Hermit":
                     hasHermitBonus = true;
+                    proficiencies.Text = "Medicine, Religion";
                     break;
                 case "Noble":
                     hasNobleBonus = true;
+                    proficiencies.Text = "History, Persuasion";
                     break;
                 case "Outlander":
                     hasOutlanderBonus = true;
+                    proficiencies.Text = "Athletics, Survival";
                     break;
                 case "Sage":
                     hasSageBonus = true;
+                    proficiencies.Text = "Arcana, History";
                     break;
                 case "Sailor":
                     hasSailorBonus = true;
+                    proficiencies.Text = "Athletics, Perception";
                     break;
                 case "Soldier":
                     hasSoldierBonus = true;
+                    proficiencies.Text = "Athletics, Intimidation";
                     break;
                 case "Urchin":
                     hasUrchinBonus = true;
+                    proficiencies.Text = "Sleight of Hand, Stealth";
                     break;
                 default: 
                     break;
