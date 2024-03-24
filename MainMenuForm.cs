@@ -28,10 +28,6 @@ namespace DnD_Character_Sheet
 
         }
 
-        private void CreateButton_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {

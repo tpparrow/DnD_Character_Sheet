@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character_Sheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Character_Sheet.Designer.cs">
+      <DependentUpon>Character_Sheet.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
