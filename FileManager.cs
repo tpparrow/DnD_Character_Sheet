@@ -10,16 +10,39 @@ namespace DnD_Character_Sheet
     internal class FileManager
     {
         //FileName
-        private string fileName;
+        private string fileName { get; set; }
+        bool isOpen { get; set; }
         
+        //Default constructors
         public FileManager() { }
         public FileManager(string fileName) { }
         
-        public string GetFileName(string fileName)
-        {
-            return fileName;
+       
+
+        public Character GetCharacter() 
+        { 
+            //temporary null return
+            return null; 
         }
 
-        public Character GetCharacter() {  return null; }
+        //Get Character by index
+        public Character GetCharacter(int index)
+        {
+            //temporary null return
+            return null;
+        }
+
+        public Character GetCharacter(string charID)
+        {
+            //temporary null return
+            return null;
+        }
+
+        public bool SaveCharacter(Character character)
+        {
+            //temporary false return
+            return false;
+        }
     }
+
 }
