@@ -136,6 +136,8 @@
             this.TutoralLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.CreateButton = new System.Windows.Forms.Button();
+            this.SavingThrowsLabel = new System.Windows.Forms.Label();
+            this.savingThrows = new System.Windows.Forms.Label();
             this.AttributesBox.SuspendLayout();
             this.Skills.SuspendLayout();
             this.PlayerBox.SuspendLayout();
@@ -872,7 +874,7 @@
             // HitPointsLabel
             // 
             this.HitPointsLabel.AutoSize = true;
-            this.HitPointsLabel.Location = new System.Drawing.Point(21, 213);
+            this.HitPointsLabel.Location = new System.Drawing.Point(38, 263);
             this.HitPointsLabel.Name = "HitPointsLabel";
             this.HitPointsLabel.Size = new System.Drawing.Size(63, 16);
             this.HitPointsLabel.TabIndex = 12;
@@ -881,7 +883,7 @@
             // ExperiencePointsLabel
             // 
             this.ExperiencePointsLabel.AutoSize = true;
-            this.ExperiencePointsLabel.Location = new System.Drawing.Point(21, 263);
+            this.ExperiencePointsLabel.Location = new System.Drawing.Point(162, 263);
             this.ExperiencePointsLabel.Name = "ExperiencePointsLabel";
             this.ExperiencePointsLabel.Size = new System.Drawing.Size(115, 16);
             this.ExperiencePointsLabel.TabIndex = 13;
@@ -940,7 +942,7 @@
             // CarryCapacityLabel
             // 
             this.CarryCapacityLabel.AutoSize = true;
-            this.CarryCapacityLabel.Location = new System.Drawing.Point(173, 213);
+            this.CarryCapacityLabel.Location = new System.Drawing.Point(133, 202);
             this.CarryCapacityLabel.Name = "CarryCapacityLabel";
             this.CarryCapacityLabel.Size = new System.Drawing.Size(113, 16);
             this.CarryCapacityLabel.TabIndex = 18;
@@ -949,7 +951,7 @@
             // ArmorClassLabel
             // 
             this.ArmorClassLabel.AutoSize = true;
-            this.ArmorClassLabel.Location = new System.Drawing.Point(21, 156);
+            this.ArmorClassLabel.Location = new System.Drawing.Point(21, 202);
             this.ArmorClassLabel.Name = "ArmorClassLabel";
             this.ArmorClassLabel.Size = new System.Drawing.Size(80, 16);
             this.ArmorClassLabel.TabIndex = 19;
@@ -958,7 +960,7 @@
             // InitiativeLabel
             // 
             this.InitiativeLabel.AutoSize = true;
-            this.InitiativeLabel.Location = new System.Drawing.Point(180, 156);
+            this.InitiativeLabel.Location = new System.Drawing.Point(287, 202);
             this.InitiativeLabel.Name = "InitiativeLabel";
             this.InitiativeLabel.Size = new System.Drawing.Size(55, 16);
             this.InitiativeLabel.TabIndex = 20;
@@ -967,7 +969,7 @@
             // LevelLabel
             // 
             this.LevelLabel.AutoSize = true;
-            this.LevelLabel.Location = new System.Drawing.Point(173, 263);
+            this.LevelLabel.Location = new System.Drawing.Point(302, 263);
             this.LevelLabel.Name = "LevelLabel";
             this.LevelLabel.Size = new System.Drawing.Size(40, 16);
             this.LevelLabel.TabIndex = 21;
@@ -991,6 +993,8 @@
             // 
             // StatBox
             // 
+            this.StatBox.Controls.Add(this.savingThrows);
+            this.StatBox.Controls.Add(this.SavingThrowsLabel);
             this.StatBox.Controls.Add(this.initiative);
             this.StatBox.Controls.Add(this.speed);
             this.StatBox.Controls.Add(this.ccLabel);
@@ -1021,7 +1025,7 @@
             // initiative
             // 
             this.initiative.AutoSize = true;
-            this.initiative.Location = new System.Drawing.Point(146, 186);
+            this.initiative.Location = new System.Drawing.Point(246, 230);
             this.initiative.Name = "initiative";
             this.initiative.Size = new System.Drawing.Size(161, 16);
             this.initiative.TabIndex = 32;
@@ -1030,7 +1034,7 @@
             // speed
             // 
             this.speed.AutoSize = true;
-            this.speed.Location = new System.Drawing.Point(342, 189);
+            this.speed.Location = new System.Drawing.Point(422, 230);
             this.speed.Name = "speed";
             this.speed.Size = new System.Drawing.Size(21, 16);
             this.speed.TabIndex = 31;
@@ -1039,7 +1043,7 @@
             // ccLabel
             // 
             this.ccLabel.AutoSize = true;
-            this.ccLabel.Location = new System.Drawing.Point(218, 240);
+            this.ccLabel.Location = new System.Drawing.Point(171, 230);
             this.ccLabel.Name = "ccLabel";
             this.ccLabel.Size = new System.Drawing.Size(28, 16);
             this.ccLabel.TabIndex = 30;
@@ -1048,7 +1052,7 @@
             // level
             // 
             this.level.AutoSize = true;
-            this.level.Location = new System.Drawing.Point(195, 298);
+            this.level.Location = new System.Drawing.Point(314, 295);
             this.level.Name = "level";
             this.level.Size = new System.Drawing.Size(14, 16);
             this.level.TabIndex = 29;
@@ -1057,7 +1061,7 @@
             // xpLabel
             // 
             this.xpLabel.AutoSize = true;
-            this.xpLabel.Location = new System.Drawing.Point(61, 295);
+            this.xpLabel.Location = new System.Drawing.Point(218, 295);
             this.xpLabel.Name = "xpLabel";
             this.xpLabel.Size = new System.Drawing.Size(14, 16);
             this.xpLabel.TabIndex = 28;
@@ -1066,7 +1070,7 @@
             // hpLabel
             // 
             this.hpLabel.AutoSize = true;
-            this.hpLabel.Location = new System.Drawing.Point(40, 238);
+            this.hpLabel.Location = new System.Drawing.Point(55, 295);
             this.hpLabel.Name = "hpLabel";
             this.hpLabel.Size = new System.Drawing.Size(21, 16);
             this.hpLabel.TabIndex = 27;
@@ -1075,7 +1079,7 @@
             // acLabel
             // 
             this.acLabel.AutoSize = true;
-            this.acLabel.Location = new System.Drawing.Point(40, 186);
+            this.acLabel.Location = new System.Drawing.Point(48, 230);
             this.acLabel.Name = "acLabel";
             this.acLabel.Size = new System.Drawing.Size(21, 16);
             this.acLabel.TabIndex = 26;
@@ -1084,7 +1088,7 @@
             // InspirationLabel
             // 
             this.InspirationLabel.AutoSize = true;
-            this.InspirationLabel.Location = new System.Drawing.Point(302, 263);
+            this.InspirationLabel.Location = new System.Drawing.Point(407, 263);
             this.InspirationLabel.Name = "InspirationLabel";
             this.InspirationLabel.Size = new System.Drawing.Size(68, 16);
             this.InspirationLabel.TabIndex = 25;
@@ -1095,9 +1099,9 @@
             this.features.AutoSize = true;
             this.features.Location = new System.Drawing.Point(145, 113);
             this.features.Name = "features";
-            this.features.Size = new System.Drawing.Size(183, 16);
+            this.features.Size = new System.Drawing.Size(150, 16);
             this.features.TabIndex = 24;
-            this.features.Text = "~~background dependent~~";
+            this.features.Text = "Background Dependent";
             // 
             // proficiencies
             // 
@@ -1111,7 +1115,7 @@
             // SpeedLabel
             // 
             this.SpeedLabel.AutoSize = true;
-            this.SpeedLabel.Location = new System.Drawing.Point(320, 156);
+            this.SpeedLabel.Location = new System.Drawing.Point(409, 202);
             this.SpeedLabel.Name = "SpeedLabel";
             this.SpeedLabel.Size = new System.Drawing.Size(48, 16);
             this.SpeedLabel.TabIndex = 22;
@@ -1242,6 +1246,23 @@
             this.CreateButton.TabIndex = 27;
             this.CreateButton.Text = "Create";
             this.CreateButton.UseVisualStyleBackColor = true;
+            // 
+            // SavingThrowsLabel
+            // 
+            this.SavingThrowsLabel.AutoSize = true;
+            this.SavingThrowsLabel.Location = new System.Drawing.Point(21, 152);
+            this.SavingThrowsLabel.Name = "SavingThrowsLabel";
+            this.SavingThrowsLabel.Size = new System.Drawing.Size(172, 16);
+            this.SavingThrowsLabel.TabIndex = 33;
+            this.SavingThrowsLabel.Text = "Saving Throw Proficiencies:";
+            // 
+            // savingThrows
+            // 
+            this.savingThrows.AutoSize = true;
+            this.savingThrows.Location = new System.Drawing.Point(240, 152);
+            this.savingThrows.Name = "savingThrows";
+            this.savingThrows.Size = new System.Drawing.Size(0, 16);
+            this.savingThrows.TabIndex = 34;
             // 
             // Character_Sheet
             // 
@@ -1388,5 +1409,7 @@
         private System.Windows.Forms.Label xpLabel;
         private System.Windows.Forms.Label speed;
         private System.Windows.Forms.Label initiative;
+        private System.Windows.Forms.Label savingThrows;
+        private System.Windows.Forms.Label SavingThrowsLabel;
     }
 }

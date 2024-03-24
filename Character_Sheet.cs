@@ -909,6 +909,37 @@ namespace DnD_Character_Sheet
             if (classBox.SelectedItem != null)
             {
                 string playerClass = classBox.SelectedItem.ToString();
+                switch (playerClass)
+                {
+                    case "Barbarian":
+                    case "Fighter":
+                        savingThrows.Text = "Constitution, Strength";
+                        break;
+                    case "Bard":
+                        savingThrows.Text = "Charisma, Dexterity";
+                        break;
+                    case "Cleric":
+                    case "Paladin":
+                    case "Warlock":
+                        savingThrows.Text = "Charisma, Wisdom";
+                        break;
+                    case "Druid":
+                    case "Wizard":
+                        savingThrows.Text = "Intelligence, Wisdom";
+                        break;
+                    case "Monk":
+                    case "Ranger":
+                        savingThrows.Text = "Dexterity, Strength";
+                        break;
+
+                    case "Rogue":
+                        savingThrows.Text = "Dexterity, Intelligence";
+                        break;
+                    case "Sorcerer":
+                        savingThrows.Text = "Charisma, Constitution";
+                        break;
+                }
+
                 int upperDice = AssignDice(playerClass);
             }
 
