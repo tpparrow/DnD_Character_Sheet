@@ -18,16 +18,19 @@ namespace DnD_Character_Sheet
             InitializeComponent();
         }
 
+        //assigning class dice based on player's class
         private int AssignDice(string playerClass)
         {
             switch (playerClass)
             {
                 case "Barbarian":
                     return 12;
+
                 case "Fighter":
                 case "Paladin":
                 case "Ranger":
                     return 10;
+
                 case "Bard":
                 case "Cleric":
                 case "Druid":
@@ -35,20 +38,13 @@ namespace DnD_Character_Sheet
                 case "Rogue":
                 case "Warlock":
                     return 8;
+
                 case "Sorcerer":
                 case "Wizard":
                     return 6;
+
                 default:
                     return -1;
-            }
-        }
-
-        private void classBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (classBox.SelectedItem != null)
-            {
-                string playerClass = classBox.SelectedItem.ToString();
-                int upperDice = AssignDice(playerClass);
             }
         }
 
@@ -62,6 +58,7 @@ namespace DnD_Character_Sheet
         int WISDOM = 8;
         int CHARISMA = 8;
 
+        //initializing background flags for skill bonuses
         bool hasAcolyteBonus = false;
         bool hasCharlatanBonus = false;
         bool hasCriminalBonus = false;
@@ -76,6 +73,32 @@ namespace DnD_Character_Sheet
         bool hasSailorBonus = false;
         bool hasUrchinBonus = false;
 
+        //resetting attributes
+        private void ResetAttributes()
+        {
+            STRENGTH = 8;
+            strLabel.Text = STRENGTH.ToString();
+
+            DEXTERITY = 8;
+            dexLabel.Text = DEXTERITY.ToString();
+
+            CONSTITUTION = 8;
+            conLabel.Text = CONSTITUTION.ToString();
+
+            INTELLIGENCE = 8;
+            intLabel.Text = INTELLIGENCE.ToString();
+
+            WISDOM = 8;
+            wisLabel.Text = WISDOM.ToString();
+
+            CHARISMA = 8;
+            chaLabel.Text = CHARISMA.ToString();
+
+            PointsDistributable = 28;
+            pointsLabel.Text = PointsDistributable.ToString();
+        }
+
+        //method for resetting background flags
         private void ResetBackgroundBonuses() {
 
             hasAcolyteBonus = false;
@@ -92,55 +115,97 @@ namespace DnD_Character_Sheet
             hasSailorBonus = false;
             hasUrchinBonus = false;
         }
-        private void UpdateAbilitiesByRace(string playerRace) {
 
+        //giving ability bonuses depending on player's race
+        private void UpdateAbilitiesByRace(string playerRace) {
+            
             switch (playerRace)
             {
                 case "Dwarf":
-                    CONSTITUTION += 2;
+                    int strength = int.Parse(strLabel.Text);
+                    strength += 2;
+                    strLabel.Text = strength.ToString();
                     break;
+
                 case "Elf":
                 case "Halfling":
-                    DEXTERITY += 2;
+                    int dexterity = int.Parse(dexLabel.Text);
+                    dexterity += 2;
+                    dexLabel.Text = dexterity.ToString();
                     break;
+
                 case "Human":
-                    STRENGTH += 1;
-                    DEXTERITY += 1;
-                    CONSTITUTION += 1;
-                    INTELLIGENCE += 1;
-                    WISDOM += 1;
-                    CHARISMA += 1;
+                    strength = int.Parse(strLabel.Text);
+                    dexterity = int.Parse(dexLabel.Text);
+                    int constitution = int.Parse(conLabel.Text);
+                    int intelligence = int.Parse(intLabel.Text);
+                    int wisdom = int.Parse(wisLabel.Text);
+                    int charisma = int.Parse(chaLabel.Text);
+
+                    strength += 1;
+                    dexterity += 1;
+                    constitution += 1;
+                    intelligence += 1;
+                    wisdom += 1;
+                    charisma += 1;
+
+                    strLabel.Text = strength.ToString();
+                    dexLabel.Text = dexterity.ToString();
+                    conLabel.Text = constitution.ToString();
+                    intLabel.Text = intelligence.ToString();
+                    wisLabel.Text = wisdom.ToString();
+                    chaLabel.Text = charisma.ToString();
                     break;
+
                 case "Dragonborn":
-                    STRENGTH += 2;
-                    CHARISMA += 1;
+                    strength = int.Parse(strLabel.Text);
+                    charisma = int.Parse(chaLabel.Text);
+
+                    strength += 2;
+                    charisma += 1;
+
+                    strLabel.Text = strength.ToString();
+                    chaLabel.Text = charisma.ToString();
+
                     break;
+
                 case "Gnome":
-                    INTELLIGENCE += 2;
+                    intelligence = int.Parse(intLabel.Text);
+                    intelligence += 2;
+                    intLabel.Text = intelligence.ToString();
                     break;
+
                 case "Half-Elf":
-                    CHARISMA += 2;
+                    charisma = int.Parse(chaLabel.Text);
+                    charisma += 2;
                     PointsDistributable += 2;
+
+                    chaLabel.Text = charisma.ToString();
+                    pointsLabel.Text = PointsDistributable.ToString();
                     break;
+
                 case "Half-Orc":
-                    STRENGTH += 2;
-                    CONSTITUTION += 1;
+                    strength = int.Parse(strLabel.Text);
+                    constitution = int.Parse(conLabel.Text);
+
+                    strength += 2;
+                    constitution += 1;
+
+                    strLabel.Text = strength.ToString();
+                    conLabel.Text = constitution.ToString();
                     break;
                 case "Tiefling":
-                    INTELLIGENCE += 1;
-                    CHARISMA += 2;
+                    intelligence = int.Parse(intLabel.Text);
+                    charisma = int.Parse(chaLabel.Text);
+
+                    intelligence += 1;
+                    charisma += 2;
+
+                    intLabel.Text = intelligence.ToString();
+                    chaLabel.Text = charisma.ToString();
                     break;
                 default:
                     break;
-            }
-        }
-
-        private void raceBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (classBox.SelectedItem != null)
-            {
-                string playerRace = raceBox.SelectedItem.ToString();
-                UpdateAbilitiesByRace(playerRace);
             }
         }
 
@@ -155,54 +220,67 @@ namespace DnD_Character_Sheet
                     hasAcolyteBonus = true;
                     proficiencies.Text = "Insight, Religion";
                     break;
+
                 case "Charlatan":
                     hasCharlatanBonus = true;
                     proficiencies.Text = "Deception, Sleight of Hand";
                     break;
+
                 case "Criminal":
                     hasCriminalBonus = true;
                     proficiencies.Text = "Deception, Stealth";
                     break;
+
                 case "Entertainer":
                     hasEntertainerBonus = true;
                     proficiencies.Text = "Acrobatics, Performance";
                     break;
+
                 case "Folk Hero":
                     hasFolkHeroBonus = true;
                     proficiencies.Text = "Animal Handling, Survival";
                     break;
+
                 case "Guild Artisan":
                     hasGuildArtisanBonus = true;
                     proficiencies.Text = "Insight, Persuasion";
                     break;
+
                 case "Hermit":
                     hasHermitBonus = true;
                     proficiencies.Text = "Medicine, Religion";
                     break;
+
                 case "Noble":
                     hasNobleBonus = true;
                     proficiencies.Text = "History, Persuasion";
                     break;
+
                 case "Outlander":
                     hasOutlanderBonus = true;
                     proficiencies.Text = "Athletics, Survival";
                     break;
+
                 case "Sage":
                     hasSageBonus = true;
                     proficiencies.Text = "Arcana, History";
                     break;
+
                 case "Sailor":
                     hasSailorBonus = true;
                     proficiencies.Text = "Athletics, Perception";
                     break;
+
                 case "Soldier":
                     hasSoldierBonus = true;
                     proficiencies.Text = "Athletics, Intimidation";
                     break;
+
                 case "Urchin":
                     hasUrchinBonus = true;
                     proficiencies.Text = "Sleight of Hand, Stealth";
                     break;
+
                 default: 
                     break;
             }
@@ -642,6 +720,27 @@ namespace DnD_Character_Sheet
                 UpdateIntelligenceSkillLabels();
                 UpdateWisdomSkillLabels();
                 UpdateCharismaSkillLabels();
+            }
+
+        }
+
+        private void raceBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ResetAttributes();
+            if (raceBox.SelectedItem != null)
+            {
+                string playerRace = raceBox.SelectedItem.ToString();
+                UpdateAbilitiesByRace(playerRace);
+            }
+
+        }
+
+        private void classBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (classBox.SelectedItem != null)
+            {
+                string playerClass = classBox.SelectedItem.ToString();
+                int upperDice = AssignDice(playerClass);
             }
 
         }

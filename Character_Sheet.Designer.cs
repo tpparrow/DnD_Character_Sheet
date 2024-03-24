@@ -189,6 +189,7 @@
             this.classBox.Name = "classBox";
             this.classBox.Size = new System.Drawing.Size(150, 24);
             this.classBox.TabIndex = 3;
+            this.classBox.SelectedIndexChanged += new System.EventHandler(this.classBox_SelectedIndexChanged);
             // 
             // raceBox
             // 
@@ -207,6 +208,7 @@
             this.raceBox.Name = "raceBox";
             this.raceBox.Size = new System.Drawing.Size(150, 24);
             this.raceBox.TabIndex = 4;
+            this.raceBox.SelectedIndexChanged += new System.EventHandler(this.raceBox_SelectedIndexChanged);
             // 
             // SelectRaceLabel
             // 
@@ -467,9 +469,9 @@
             this.ConstituitonLabel.AutoSize = true;
             this.ConstituitonLabel.Location = new System.Drawing.Point(6, 85);
             this.ConstituitonLabel.Name = "ConstituitonLabel";
-            this.ConstituitonLabel.Size = new System.Drawing.Size(72, 16);
+            this.ConstituitonLabel.Size = new System.Drawing.Size(75, 16);
             this.ConstituitonLabel.TabIndex = 2;
-            this.ConstituitonLabel.Text = "Constituion";
+            this.ConstituitonLabel.Text = "Constitution";
             // 
             // StrDownButton
             // 
