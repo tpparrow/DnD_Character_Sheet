@@ -1,6 +1,6 @@
 ﻿namespace DnD_Character_Sheet
 {
-    partial class Form1
+    partial class MainMenuForm
     {
         /// <summary>
         /// Required designer variable.
