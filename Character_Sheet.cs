@@ -289,23 +289,191 @@ namespace DnD_Character_Sheet
         //method to enable and disable buttons
         private void UpdateButton()
         {
-            StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 18;
-            StrDownButton.Enabled = STRENGTH > 1;
+            if (raceBox.SelectedItem != null)
+            {
+                string playerRace = raceBox.SelectedItem.ToString();
 
-            DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 18;
-            DexDownButton.Enabled = DEXTERITY > 1;
+                if (playerRace == "Dwarf")
+                {
+                    StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 18;
+                    StrDownButton.Enabled = STRENGTH > 1;
 
-            ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 18;
-            ConDownButton.Enabled = CONSTITUTION > 1;
+                    DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 18;
+                    DexDownButton.Enabled = DEXTERITY > 1;
 
-            IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 18;
-            IntDownButton.Enabled = INTELLIGENCE > 1;
+                    ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 20;
+                    ConDownButton.Enabled = CONSTITUTION > 3;
 
-            WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
-            WisDownButton.Enabled = WISDOM > 1;
+                    IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 18;
+                    IntDownButton.Enabled = INTELLIGENCE > 1;
 
-            ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 18;
-            ChaDownButton.Enabled = CHARISMA > 1;
+                    WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
+                    WisDownButton.Enabled = WISDOM > 1;
+
+                    ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 18;
+                    ChaDownButton.Enabled = CHARISMA > 1;
+                } 
+                else if (playerRace == "Elf" || playerRace == "Halfling" )
+                {
+                    StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 18;
+                    StrDownButton.Enabled = STRENGTH > 1;
+
+                    DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 20;
+                    DexDownButton.Enabled = DEXTERITY > 3;
+
+                    ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 18;
+                    ConDownButton.Enabled = CONSTITUTION > 1;
+
+                    IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 18;
+                    IntDownButton.Enabled = INTELLIGENCE > 1;
+
+                    WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
+                    WisDownButton.Enabled = WISDOM > 1;
+
+                    ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 18;
+                    ChaDownButton.Enabled = CHARISMA > 1;
+                }
+                else if(playerRace == "Human")
+                {
+                    StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 18;
+                    StrDownButton.Enabled = STRENGTH > 2;
+
+                    DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 18;
+                    DexDownButton.Enabled = DEXTERITY > 2;
+
+                    ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 18;
+                    ConDownButton.Enabled = CONSTITUTION > 2;
+
+                    IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 18;
+                    IntDownButton.Enabled = INTELLIGENCE > 2;
+
+                    WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
+                    WisDownButton.Enabled = WISDOM > 2;
+
+                    ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 18;
+                    ChaDownButton.Enabled = CHARISMA > 2;
+                }
+                else if(playerRace == "Dragonborn")
+                {
+                    StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 20;
+                    StrDownButton.Enabled = STRENGTH > 3;
+
+                    DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 18;
+                    DexDownButton.Enabled = DEXTERITY > 1;
+
+                    ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 18;
+                    ConDownButton.Enabled = CONSTITUTION > 1;
+
+                    IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 18;
+                    IntDownButton.Enabled = INTELLIGENCE > 1;
+
+                    WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
+                    WisDownButton.Enabled = WISDOM > 1;
+
+                    ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 19;
+                    ChaDownButton.Enabled = CHARISMA > 2;
+                }
+                else if (playerRace == "Gnome")
+                {
+                    StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 18;
+                    StrDownButton.Enabled = STRENGTH > 1;
+
+                    DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 18;
+                    DexDownButton.Enabled = DEXTERITY > 1;
+
+                    ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 18;
+                    ConDownButton.Enabled = CONSTITUTION > 1;
+
+                    IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 20;
+                    IntDownButton.Enabled = INTELLIGENCE > 3;
+
+                    WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
+                    WisDownButton.Enabled = WISDOM > 1;
+
+                    ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 18;
+                    ChaDownButton.Enabled = CHARISMA > 1;
+                }
+                else if (playerRace == "Half-Elf")
+                {
+                    StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 18;
+                    StrDownButton.Enabled = STRENGTH > 1;
+
+                    DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 18;
+                    DexDownButton.Enabled = DEXTERITY > 1;
+
+                    ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 18;
+                    ConDownButton.Enabled = CONSTITUTION > 1;
+
+                    IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 18;
+                    IntDownButton.Enabled = INTELLIGENCE > 1;
+
+                    WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
+                    WisDownButton.Enabled = WISDOM > 1;
+
+                    ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 20;
+                    ChaDownButton.Enabled = CHARISMA > 3;
+                }
+                else if (playerRace == "Half-Orc")
+                {
+                    StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 20;
+                    StrDownButton.Enabled = STRENGTH > 3;
+
+                    DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 18;
+                    DexDownButton.Enabled = DEXTERITY > 1;
+
+                    ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 19;
+                    ConDownButton.Enabled = CONSTITUTION > 2;
+
+                    IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 18;
+                    IntDownButton.Enabled = INTELLIGENCE > 1;
+
+                    WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
+                    WisDownButton.Enabled = WISDOM > 1;
+
+                    ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 18;
+                    ChaDownButton.Enabled = CHARISMA > 1;
+                }
+                else if (playerRace == "Tiefling")
+                {
+                    StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 18;
+                    StrDownButton.Enabled = STRENGTH > 1;
+
+                    DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 18;
+                    DexDownButton.Enabled = DEXTERITY > 1;
+
+                    ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 18;
+                    ConDownButton.Enabled = CONSTITUTION > 1;
+
+                    IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 19;
+                    IntDownButton.Enabled = INTELLIGENCE > 2;
+
+                    WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
+                    WisDownButton.Enabled = WISDOM > 1;
+
+                    ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 20;
+                    ChaDownButton.Enabled = CHARISMA > 3;
+                }
+            }
+            else
+            {
+                StrUpButton.Enabled = PointsDistributable > 0 && STRENGTH < 18;
+                StrDownButton.Enabled = STRENGTH > 1;
+
+                DexUpButton.Enabled = PointsDistributable > 0 && DEXTERITY < 18;
+                DexDownButton.Enabled = DEXTERITY > 1;
+
+                ConUpButton.Enabled = PointsDistributable > 0 && CONSTITUTION < 18;
+                ConDownButton.Enabled = CONSTITUTION > 1;
+
+                IntUpButton.Enabled = PointsDistributable > 0 && INTELLIGENCE < 18;
+                IntDownButton.Enabled = INTELLIGENCE > 1;
+
+                WisUpButton.Enabled = PointsDistributable > 0 && WISDOM < 18;
+                WisDownButton.Enabled = WISDOM > 1;
+
+                ChaUpButton.Enabled = PointsDistributable > 0 && CHARISMA < 18;
+                ChaDownButton.Enabled = CHARISMA > 1;
+            }
 
         }
 
@@ -727,6 +895,7 @@ namespace DnD_Character_Sheet
         private void raceBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             ResetAttributes();
+            UpdateButton();
             if (raceBox.SelectedItem != null)
             {
                 string playerRace = raceBox.SelectedItem.ToString();
